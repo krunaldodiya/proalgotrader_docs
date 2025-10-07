@@ -40,6 +40,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/', // Serve docs at the site's root
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -65,7 +66,7 @@ const config: Config = {
         indexDocs: true,
         indexBlog: false,
         indexPages: false,
-        docsRouteBasePath: '/docs',
+        docsRouteBasePath: '/',
         searchBarShortcutHint: true,
         searchBarPosition: 'right',
       },
@@ -83,6 +84,8 @@ const config: Config = {
       logo: {
         alt: 'ProAlgoTrader Logo',
         src: 'img/logo.svg',
+        href: 'https://www.proalgotrader.com',
+        target: '_blank',
       },
       items: [
         {
@@ -92,7 +95,12 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/krunaldodiya/proalgotrader_core',
+          href: 'https://www.proalgotrader.com',
+          label: 'Main Website',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/krunaldodiya/proalgotrader_docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -106,15 +114,15 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/getting-started/installation',
+              to: '/getting-started/installation',
             },
             {
               label: 'Core Concepts',
-              to: '/docs/core-concepts/algorithm-overview',
+              to: '/core-concepts/algorithm-overview',
             },
             {
               label: 'API Reference',
-              to: '/docs/api-reference/algorithm-api',
+              to: '/api-reference/algorithm-api',
             },
           ],
         },
@@ -122,12 +130,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
+              label: 'Main Website',
+              href: 'https://www.proalgotrader.com',
+            },
+            {
               label: 'GitHub',
-              href: 'https://github.com/krunaldodiya/proalgotrader_core',
+              href: 'https://github.com/krunaldodiya/proalgotrader_docs',
             },
             {
               label: 'Support',
-              to: '/docs/support/contact',
+              to: '/support/contact',
             },
           ],
         },
@@ -136,11 +148,11 @@ const config: Config = {
           items: [
             {
               label: 'Examples',
-              to: '/docs/examples/basic-examples',
+              to: '/examples/README',
             },
             {
               label: 'Troubleshooting',
-              to: '/docs/support/troubleshooting',
+              to: '/support/troubleshooting',
             },
           ],
         },
