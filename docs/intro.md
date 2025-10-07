@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Introduction
 description: Welcome to ProAlgoTrader - a powerful algorithmic trading platform
+slug: /
 ---
 
 # ProAlgoTrader Documentation
